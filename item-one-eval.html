@@ -1,0 +1,139 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pedro Oliveira</title>
+<meta name="description" content="">
+<meta name="author" content="Pedro Oliveira">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- fixed width style sheet -->
+<link rel="stylesheet" href="fixed-width.css">
+
+<!-- your custom CSS goes here -->
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.nav .one { grid-column: 1 / 2 ; }
+
+#one {
+	background-image: url('images/board300.jpg');
+	}
+
+#one:hover {
+    background-image: url('images/board300hover.jpg');
+    }
+    
+    /* set parent element to position:relative; */
+figure.col-two { position:relative; margin:0; padding:0; border:0; font-size:0; }
+
+figure.col-two figcaption, figure.col-two p  { pointer-events: none; }		/* passes mouse down to a tag on image */
+
+/* 
+when we roll over the parent element the paragraph elements style is changed
+its positioned with its parent element on screen by setting left:0
+
+the bottom: 8rem is a kludge to work with this page
+
+the rest is styled to suit
+
+*/
+
+figure.col-two figcaption, figure.col-two p { 
+	position:absolute; 
+	left:-999em; top:0; 
+	font-size: 1.5rem; 
+	box-sizing: border-box;
+	color:#fff;
+}
+
+figure.col-two:hover p {
+	left: 0; 
+	bottom: 0; 
+	line-height: 2rem;
+	width:100%;
+	background: transparent; 
+	padding: 2.5rem 1rem 1rem;
+	margin-bottom:0;
+	font-family:sans-serif;
+}
+
+figure.col-two:hover figcaption { left:0; background: #990000; width:100%; height:100%; padding: 0 1rem; }
+
+figure.col-two:active figcaption { background: #990000; }
+
+figure.col-two:nth-of-type(4):hover { border-radius: .0rem; overflow: hidden; }
+
+.fred a {color:#900 !important;}
+.fred a:visited {color:#900 !important;}
+.fred a:hover {color:gray !important;}
+.fred a:active {color:blue !important;}
+
+.morph {  }
+.morph h2 { width:100%; height:100%; background: #900; }
+.morph h2 p1 { color:white; margin-left: 10px; }
+
+.h2 {color:white;}
+
+.foo img:last-child{display:none}
+.foo:hover img:first-child{display:none}
+.foo:hover img:last-child{display:inline-block}
+
+p3 { color:#900; }
+
+p4 { font-size: 8px; }
+
+.box {
+	border-color: #900;
+	grid-row: 3 / 5;
+	grid-column: 6 / 8;
+	}
+
+.
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="wrapper skeleton">
+
+<div class="col-seven"></div>
+
+<div class="col-one fred">
+	
+	 <a class="foo" href="index.html">
+        <img src="images/prd.png" />
+        <img src="images/prdhover.png" />
+    </a>
+
+  	<h3><a href="index.html">work</a><br>
+	<a href="about.html">about</a><br>
+	<a href="contact.html">contact</a><br><br>
+	<a href="item-one.html"><i>go back</i></a></h3>
+</div>
+
+
+<div class="col-six">
+<p3><h2>Self-evaluation for <b>Motion Graphics</b></h2></p3></div>
+
+
+<div class="col-three"><h6>For the Motion Graphics project, I’m not entirely satisfied with my final outcome and performance during the brief. This is the area I’ve always had my mind set of specialising, but I couldn’t enjoy creating this project, for some reason. I’ve always felt like I was one step back than everyone else, due to a mix of personal issues that arose in the past 3 months. I really wish I could’ve done better, but hopefully in another Motion Graphs project I’ll manage to work this out.
+<br><br>
+The video that I created, despite its lack of visual complexity, I feel like it conveys well the message I was trying to send out. I’ve also deliberately decided not to use a voice over, as it made more sense that, when the viewer reads through it, they listen to their own voice in their heads, as opposed the one of stranger. This is so they can reflect personally on the theme issue of the video.
+</h6></div>
+
+<div class="col-three"><h6>Regarding the course and staff, I felt very supported through all of it. The After Effects workshops were useful and the structure of creating a Motion Graphics video taught by Alice was incredibly helpful, a method that works and that I’ll carry on, for the future. 
+<br><br>
+During the next few months, I’ll be looking for professional help, which hopefully will increase my performance in the course overall.
+</h6></div>
+
+</body>

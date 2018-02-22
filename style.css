@@ -1,0 +1,73 @@
+/* Your styles here
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ <html>
+
+@font-face {
+  	font-family: 'Ubuntu', Regular, sans-serif;
+    src: url('fonts/Ubuntu/Ubuntu-Regular.ttf') format:('tff');
+     }
+
+
+body, h1, h2, h3 { 	font-family: 'Ubuntu', Regular, sans-serif; }
+
+h1, h2 { text-align:left; }
+
+h2, h3 { font-size:2.5rem; }
+
+h3 { text-align:center; color:#900; }
+
+p { font-size:1.25rem; text-align:left; margin-bottom:1rem; }
+
+a { text-decoration:none; color: white; }
+a:hover { text-decoration:underline; }
+
+
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(7, [col] 1fr );
+	grid-template-rows: repeat(9, [row] auto) ;
+	grid-column-gap: 1em;
+	grid-row-gap: 15px;
+}
+
+.wrapper div { margin:0; padding:0; }
+
+
+.nav {
+	display: grid;
+	grid-auto-rows: minmax(80px, auto);
+	grid-gap: 2em;
+	grid-template-columns: 1fr auto auto auto;
+	background: none repeat scroll 0% 0% #36f;
+	}
+}
+
+.nav h1 { font-size:2em; margin-top: 20px; }
+.nav a { font-size:1.5em; margin-top: 10px; }
+
+.h2 {
+	align: center
+	color: #900;
+	}
+
+.content { min-height:auto; margin-top:1em; background: #36f; }
+
+.col-one { 
+	grid-column: span 1;
+	grid-row: span 9;
+	}
+.col-two { grid-column: span 2; }
+.col-three { grid-column: span 3; }
+.col-four { grid-column: span 4; }
+.col-six { grid-column: span 6; background-color: #fff; }
+.col-seven { grid-column: span 7; grid-template-rows: 1fr; }
+
+.foo img:last-child{display:none}
+.foo:hover img:first-child{display:none}
+.foo:hover img:last-child{display:inline-block}
+
+
+</html>

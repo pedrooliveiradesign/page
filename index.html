@@ -1,0 +1,162 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pedro Oliveira</title>
+<meta name="description" content="">
+<meta name="author" content="Pedro Oliveira">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- fixed width style sheet -->
+<link rel="stylesheet" href="fixed-width.css">
+
+<!-- your custom CSS goes here -->
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.nav .one { grid-column: 1 / 2 ; }
+
+#one {
+	background-image: url('images/board300.jpg');
+	}
+
+#one:hover {
+    background-image: url('images/board300hover.jpg');
+    }
+    
+    /* set parent element to position:relative; */
+figure.col-two { position:relative; margin:0; padding:0; border:0; font-size:0; }
+
+figure.col-two figcaption, figure.col-two p  { pointer-events: none; }		/* passes mouse down to a tag on image */
+
+/* 
+when we roll over the parent element the paragraph elements style is changed
+its positioned with its parent element on screen by setting left:0
+
+the bottom: 8rem is a kludge to work with this page
+
+the rest is styled to suit
+
+*/
+
+figure.col-two figcaption, figure.col-two p { 
+	position:absolute; 
+	left:-999em; top:0em; 
+	font-size: 1.5rem; 
+	box-sizing: border-box;
+	color:#fff;
+}
+
+figure.col-two:hover p {
+	left: 0; 
+	bottom: 0; 
+	line-height: 2rem;
+	width:100%;
+	background: transparent; 
+	padding: 2.5rem 1rem 1rem;
+	margin-bottom:0;
+	font-family:sans-serif;
+}
+
+figure.col-two:hover figcaption { left:0; background: #990000; width:100%; height:100%; padding: 0 1rem; }
+
+figure.col-two:active figcaption { background: #990000; }
+
+figure.col-two:nth-of-type(4):hover { border-radius: .0rem; overflow: hidden; }
+
+.fred a {color:#900 !important;}
+.fred a:visited {color:#900 !important;}
+.fred a:hover {color:gray !important;}
+.fred a:active {color:blue !important;}
+
+
+</style>
+
+</head>
+
+
+
+<body>
+
+<div class="container">
+
+<div class="wrapper skeleton">
+
+<div class="col-seven"></div>
+
+
+
+<div class="col-one fred">
+
+	 <a class="foo" href="index.html">
+        <img src="images/prd.png" />
+        <img src="images/prdhover.png" />
+    </a>
+
+  	<h3><a href="index.html"><strong>work</strong></a><br>
+	<a href="about.html">about</a><br>
+	<a href="contact.html">contact</a></h3>
+</div>
+
+
+
+<figure class="col-two">
+	<a href="item-one.html">
+		<img src="images/mh.jpg">
+	</a>
+	<figcaption>Motion Graphics</figcaption>
+	<p>An animated video tackling the issue of Mental Health</p>
+</figure>
+
+<figure class="col-two">
+	<a href="item-two.html">
+		<img src="images/web.jpg">
+	</a>
+	<figcaption>Website development</figcaption>
+	<p>The process of coding and designing this website</p>
+</figure>
+
+
+<figure class="col-two">
+	<a href="item-three.html">
+		<img src="images/holb.jpg">
+	</a>
+	<figcaption>Subscription Box</figcaption>
+	<p>An industry project for Health-on-Line x Fireworx</p>
+</figure>
+
+<!-- end three column block -->
+
+
+<figure class="col-two">
+	<a href="item-four.html">
+		<img src="images/visys.jpg">
+	</a>
+	<figcaption>Visual Synthesis</figcaption>
+	<p>A journey book detailing the process of creating 'Visual Systems'</p>
+</figure>
+
+<figure class="col-two">
+	<a href="item-five.html">
+		<img src="images/boards.jpg">
+	</a>
+	<figcaption>Visual Systems</figcaption>
+	<p>Mapping the AUB Campus</p>
+</figure>
+
+<figure class="col-two">
+	<a href="item-six.html">
+		<img src="images/beef.gif">
+	</a>
+	<figcaption>Flesh & Blood</figcaption>
+	<p>A piece of work about self-harm</p>
+</figure>
+
+<div class="col-six"><b>Pedro Oliveira</b> 2018</div>
+
+</body>

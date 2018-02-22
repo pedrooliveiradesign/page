@@ -1,0 +1,133 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pedro Oliveira</title>
+<meta name="description" content="">
+<meta name="author" content="Pedro Oliveira">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- fixed width style sheet -->
+<link rel="stylesheet" href="fixed-width.css">
+
+<!-- your custom CSS goes here -->
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.nav .one { grid-column: 1 / 2 ; }
+
+#one {
+	background-image: url('images/board300.jpg');
+	}
+
+#one:hover {
+    background-image: url('images/board300hover.jpg');
+    }
+    
+    /* set parent element to position:relative; */
+figure.col-two { position:relative; margin:0; padding:0; border:0; font-size:0; }
+
+figure.col-two figcaption, figure.col-two p  { pointer-events: none; }		/* passes mouse down to a tag on image */
+
+/* 
+when we roll over the parent element the paragraph elements style is changed
+its positioned with its parent element on screen by setting left:0
+
+the bottom: 8rem is a kludge to work with this page
+
+the rest is styled to suit
+
+*/
+
+figure.col-two figcaption, figure.col-two p { 
+	position:absolute; 
+	left:-999em; top:0; 
+	font-size: 1.5rem; 
+	box-sizing: border-box;
+	color:#fff;
+}
+
+figure.col-two:hover p {
+	left: 0; 
+	bottom: 0; 
+	line-height: 2rem;
+	width:100%;
+	background: transparent; 
+	padding: 2.5rem 1rem 1rem;
+	margin-bottom:0;
+	font-family:sans-serif;
+}
+
+figure.col-two:hover figcaption { left:0; background: #990000; width:100%; height:100%; padding: 0 1rem; }
+
+figure.col-two:active figcaption { background: #990000; }
+
+figure.col-two:nth-of-type(4):hover { border-radius: .0rem; overflow: hidden; }
+
+.fred a {color:#900 !important;}
+.fred a:visited {color:#900 !important;}
+.fred a:hover {color:gray !important;}
+.fred a:active {color:blue !important;}
+
+.morph {  }
+.morph h2 { width:100%; height:100%; background: #900; }
+.morph h2 p1 { color:white; margin-left: 10px; }
+
+.h2 {color:white;}
+
+.foo img:last-child{display:none}
+.foo:hover img:first-child{display:none}
+.foo:hover img:last-child{display:inline-block}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="wrapper skeleton">
+
+<div class="col-seven"></div>
+
+<div class="col-one fred">
+	
+	 <a class="foo" href="index.html">
+        <img src="images/prd.png" />
+        <img src="images/prdhover.png" />
+    </a>
+
+  	<h3><a href="index.html">work</a><br>
+	<a href="about.html"><strong>about</strong></a><br>
+	<a href="contact.html">contact</a></h3>
+</div>
+
+<div class="col-six morph"><h2><p1>About Me</p1></h2></div>
+
+<div class="col-two"><img src="images/portrait.jpg"></div>
+
+<div class="col-four">
+
+<b>Hello.</b>
+<br><br>
+My name is <b>Pedro Oliveira</b> and I’m an aspiring Graphic Designer from Portugal, currently living in Bournemouth. 
+<br><br>
+I’m undertaking a BA (Hons) in Graphic Design at the Arts University Bournemouth, where I’m continuously building up on my design skill set. My interests range from Publication Layout to Web Design, with a focus on Motion Graphics - the area I’m planning to specialise in. 
+<br><br>
+Besides my professional design career, I’m heavily interested in event planning and branding, European politics and volunteering. I’m an active member of the European Youth Parliament, an international volunteering platform that provides me with a place to voice my opinions, develop leadership skills and ultimately expand my design knowledge, by trying out different media concepts on mostly non-creative, culturally diverse audiences. 
+<br><br>
+I’ve chosen this professional area, as I’ve always looked at the world in a visual way, sensing unbalances and incongruities in my surroundings; small aspects of urban elements that ultimately affected wayfinding. This is something that I hope to impact the world in, as I believe that the main purpose of Graphic Design is to make people’s lives easier.
+<br><br>
+Recently, I had my first meaningful contact with the industry. AUB offered me the chance to work on a brief by the local design company Fireworx for Health-on-Line. It was an absolute pleasure to work on this project, as I’ve received important feedback and learned how to approach industry professionals. Our solution for the brief was received with great excitement, ultimately being deemed as relevant and feasible. 
+
+</div>
+
+
+
+</body>

@@ -1,0 +1,139 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pedro Oliveira</title>
+<meta name="description" content="">
+<meta name="author" content="Pedro Oliveira">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- fixed width style sheet -->
+<link rel="stylesheet" href="fixed-width.css">
+
+<!-- your custom CSS goes here -->
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.nav .one { grid-column: 1 / 2 ; }
+
+#one {
+	background-image: url('images/board300.jpg');
+	}
+
+#one:hover {
+    background-image: url('images/board300hover.jpg');
+    }
+    
+    /* set parent element to position:relative; */
+figure.col-two { position:relative; margin:0; padding:0; border:0; font-size:0; }
+
+figure.col-two figcaption, figure.col-two p  { pointer-events: none; }		/* passes mouse down to a tag on image */
+
+/* 
+when we roll over the parent element the paragraph elements style is changed
+its positioned with its parent element on screen by setting left:0
+
+the bottom: 8rem is a kludge to work with this page
+
+the rest is styled to suit
+
+*/
+
+figure.col-two figcaption, figure.col-two p { 
+	position:absolute; 
+	left:-999em; top:0; 
+	font-size: 1.5rem; 
+	box-sizing: border-box;
+	color:#fff;
+}
+
+figure.col-two:hover p {
+	left: 0; 
+	bottom: 0; 
+	line-height: 2rem;
+	width:100%;
+	background: transparent; 
+	padding: 2.5rem 1rem 1rem;
+	margin-bottom:0;
+	font-family:sans-serif;
+}
+
+figure.col-two:hover figcaption { left:0; background: #990000; width:100%; height:100%; padding: 0 1rem; }
+
+figure.col-two:active figcaption { background: #990000; }
+
+figure.col-two:nth-of-type(4):hover { border-radius: .0rem; overflow: hidden; }
+
+.fred a {color:#900 !important;}
+.fred a:visited {color:#900 !important;}
+.fred a:hover {color:gray !important;}
+.fred a:active {color:blue !important;}
+
+.morph {  }
+.morph h2 { width:100%; height:100%; background: #900; }
+.morph h2 p1 { color:white; margin-left: 10px; }
+
+.h2 {color:white;}
+
+.foo img:last-child{display:none}
+.foo:hover img:first-child{display:none}
+.foo:hover img:last-child{display:inline-block}
+
+p3 { color:#900; }
+
+p4 { font-size: 8px; }
+
+.box {
+	border-color: #900;
+	grid-row: 3 / 5;
+	grid-column: 6 / 8;
+	}
+
+.
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="wrapper skeleton">
+
+<div class="col-seven"></div>
+
+<div class="col-one fred">
+	
+	 <a class="foo" href="index.html">
+        <img src="images/prd.png" />
+        <img src="images/prdhover.png" />
+    </a>
+
+  	<h3><a href="index.html">work</a><br>
+	<a href="about.html">about</a><br>
+	<a href="contact.html">contact</a><br><br>
+	<a href="item-two.html"><i>go back</i></a></h3>
+</div>
+
+
+<div class="col-six">
+<p3><h2>Self-evaluation for <b>Web Design</b></h2></p3></div>
+
+
+<div class="col-three"><h6>The website was definitely the hardest project I’ve had to deal with, since the beginning of this degree. I really did struggle to deliver something cohesive, functional and that I could be proud of. However, in very end I managed to achieve this and I’m very happy with the result.
+<br><br>
+I also have plans of developing it even further, such as building up on each project and cleaning up the code. I’ve spent most of my time laying the foundations of this website, carefully preparing the grid and learning its intricacies, so that in the future I can add more work and expand each area of the website, with full control over every aspect. This website will be a very important tool to kickstart my professional career and it’s incredible that we already have something like this, in such an early stage of our degree.
+</h6></div>
+
+<div class="col-three"><h6>Regarding the HTML workshops, they were the key to ‘crack the code’. Mark and Daniela did an outstanding job in teaching us this new language and I’m very grateful to them for their continuous support in this very long process.
+<br><br>
+Overall, I’m very happy with the outcome, but I regret dismissing the importance of the non-coding aspects of the website, such as reviewing the websites user-experience. It was a very long but hopefully fruitful journey.
+</h6></div>
+
+</body>

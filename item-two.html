@@ -1,0 +1,159 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pedro Oliveira</title>
+<meta name="description" content="">
+<meta name="author" content="Pedro Oliveira">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- fixed width style sheet -->
+<link rel="stylesheet" href="fixed-width.css">
+
+<!-- your custom CSS goes here -->
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.nav .one { grid-column: 1 / 2 ; }
+
+#one {
+	background-image: url('images/board300.jpg');
+	}
+
+#one:hover {
+    background-image: url('images/board300hover.jpg');
+    }
+    
+    /* set parent element to position:relative; */
+figure.col-two { position:relative; margin:0; padding:0; border:0; font-size:0; }
+
+figure.col-two figcaption, figure.col-two p  { pointer-events: none; }		/* passes mouse down to a tag on image */
+
+/* 
+when we roll over the parent element the paragraph elements style is changed
+its positioned with its parent element on screen by setting left:0
+
+the bottom: 8rem is a kludge to work with this page
+
+the rest is styled to suit
+
+*/
+
+figure.col-two figcaption, figure.col-two p { 
+	position:absolute; 
+	left:-999em; top:0; 
+	font-size: 1.5rem; 
+	box-sizing: border-box;
+	color:#fff;
+}
+
+figure.col-two:hover p {
+	left: 0; 
+	bottom: 0; 
+	line-height: 2rem;
+	width:100%;
+	background: transparent; 
+	padding: 2.5rem 1rem 1rem;
+	margin-bottom:0;
+	font-family:sans-serif;
+}
+
+figure.col-two:hover figcaption { left:0; background: #990000; width:100%; height:100%; padding: 0 1rem; }
+
+figure.col-two:active figcaption { background: #990000; }
+
+figure.col-two:nth-of-type(4):hover { border-radius: .0rem; overflow: hidden; }
+
+.fred a {color:#900 !important;}
+.fred a:visited {color:#900 !important;}
+.fred a:hover {color:gray !important;}
+.fred a:active {color:blue !important;}
+
+.morph {  }
+.morph h2 { width:100%; height:100%; background: #900; }
+.morph h2 p1 { color:white; margin-left: 10px; }
+
+.h2 {color:white;}
+
+.foo img:last-child{display:none}
+.foo:hover img:first-child{display:none}
+.foo:hover img:last-child{display:inline-block}
+
+p3 { color:#900; }
+
+p4 { font-size: 8px; }
+
+.box {
+	border-color: #900;
+	grid-row: 3 / 5;
+	grid-column: 6 / 8;
+	}
+
+.
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="wrapper skeleton">
+
+<div class="col-seven"></div>
+
+<div class="col-one fred">
+	
+	 <a class="foo" href="index.html">
+        <img src="images/prd.png" />
+        <img src="images/prdhover.png" />
+    </a>
+
+  	<h3><a href="index.html">work</a><br>
+	<a href="about.html">about</a><br>
+	<a href="contact.html">contact</a><br><br>
+	<a href="index.html"><i>go back</i></a></h3>
+</div>
+
+
+<div class="col-six">
+<img src="images/screen.jpg"><br><br>
+<p3><h2><b>Website development</b><br><i>Web Design</i></h2></p3></div>
+
+
+<div class="col-four"><h6>
+The development of this website started off with the writing of the About Me page, taking into consideration all the advice we were given. I chose a more formal tone, as I believe it suits the purpose of this piece of work — presenting ourselves to the industry. I chose a colourful portrait of myself, as it, in a way, describes my personality. 
+<br><br> 
+I've also developed a provisional logo for myself <I>(see top-right of the website)</i> and I've matched the whole piece to the colours selected. 
+<br><br> 
+Then I proceeded to build a grid using CSS, with the tools provided in the workshops. It's a seven-column grid where the first column serves exclusively for navigation. </h6>
+</div>
+
+<div class="col-two"><h6>
+I've also selected a font that is used fully throughout the website and my logo. This font is <I>Viato</i>, a sans-serif font created by Dalton Maag. I've chosed this because I believe it to suit the general tone of voice of the website and how I'm trying to be perceived.
+<br><br>
+<img src="images/font.png">
+</h6></div>
+
+<div class="col-six"></div>
+
+<div class="col-two"><h6>
+For the navigation on the website, I've tried to keep it as simple and neat as possible. I've also chose to have my work displayed on the main page, as I'm believer that work just speaks for itself, when it comes to the industry. 
+<br><br>
+On the right, there's a scheme of the website navigation skeleton. 
+<br><br>
+This website is in an early stage. I have outlined a plan on how to develop it further and most of the time spent working on this project was aimed at creating a stable platform that I could work with, in the future. I believe I've managed to achieve that.
+</h6></div>
+
+<div class="col-four"><img src="images/webpros.jpg"></div>
+<br><br>
+
+
+<div class="col-six morph"><a href="item-two-eval.html"><h2><p1>Self-evaluation for <b>Website Design</b></p1></h2></div>
+</body>

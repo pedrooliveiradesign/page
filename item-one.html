@@ -1,0 +1,149 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pedro Oliveira</title>
+<meta name="description" content="">
+<meta name="author" content="Pedro Oliveira">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- fixed width style sheet -->
+<link rel="stylesheet" href="fixed-width.css">
+
+<!-- your custom CSS goes here -->
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.nav .one { grid-column: 1 / 2 ; }
+
+#one {
+	background-image: url('images/board300.jpg');
+	}
+
+#one:hover {
+    background-image: url('images/board300hover.jpg');
+    }
+    
+    /* set parent element to position:relative; */
+figure.col-two { position:relative; margin:0; padding:0; border:0; font-size:0; }
+
+figure.col-two figcaption, figure.col-two p  { pointer-events: none; }		/* passes mouse down to a tag on image */
+
+/* 
+when we roll over the parent element the paragraph elements style is changed
+its positioned with its parent element on screen by setting left:0
+
+the bottom: 8rem is a kludge to work with this page
+
+the rest is styled to suit
+
+*/
+
+figure.col-two figcaption, figure.col-two p { 
+	position:absolute; 
+	left:-999em; top:0; 
+	font-size: 1.5rem; 
+	box-sizing: border-box;
+	color:#fff;
+}
+
+figure.col-two:hover p {
+	left: 0; 
+	bottom: 0; 
+	line-height: 2rem;
+	width:100%;
+	background: transparent; 
+	padding: 2.5rem 1rem 1rem;
+	margin-bottom:0;
+	font-family:sans-serif;
+}
+
+figure.col-two:hover figcaption { left:0; background: #990000; width:100%; height:100%; padding: 0 1rem; }
+
+figure.col-two:active figcaption { background: #990000; }
+
+figure.col-two:nth-of-type(4):hover { border-radius: .0rem; overflow: hidden; }
+
+.fred a {color:#900 !important;}
+.fred a:visited {color:#900 !important;}
+.fred a:hover {color:gray !important;}
+.fred a:active {color:blue !important;}
+
+.morph {  }
+.morph h2 { width:100%; height:100%; background: #900; }
+.morph h2 p1 { color:white; margin-left: 10px; }
+
+.h2 {color:white;}
+
+.foo img:last-child{display:none}
+.foo:hover img:first-child{display:none}
+.foo:hover img:last-child{display:inline-block}
+
+p3 { color:#900; }
+
+p4 { font-size: 8px; }
+
+.box {
+	border-color: #900;
+	grid-row: 3 / 5;
+	grid-column: 6 / 8;
+	}
+
+.
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="wrapper skeleton">
+
+<div class="col-seven"></div>
+
+<div class="col-one fred">
+	
+	 <a class="foo" href="index.html">
+        <img src="images/prd.png" />
+        <img src="images/prdhover.png" />
+    </a>
+
+  	<h3><a href="index.html">work</a><br>
+	<a href="about.html">about</a><br>
+	<a href="contact.html">contact</a><br><br>
+	<a href="index.html"><i>go back</i></a></h3>
+</div>
+
+
+<div class="col-six">
+<video width="820" controls poster="images/poster.png">
+  <source src="media/mentalhealth.mp4" type="video/mp4">
+</video><br><br>
+<p3><h2><b>Tackling the issue of Mental Health</b><br><i>Motion Graphics</i></h2></p3></div>
+
+
+<div class="col-two"><h6>In this project, I've decided to try and raise awareness to the stigmatisation of general Mental Health problems. Through outlining the problem, as opposed of simply exposing it, I'm trying to open a dialogue with the viewers, for them to reflect on the problem. I've approached the topic very carefully by remaining neutral and by simply providing information on the actual problem. </h6></div>
+
+<div class="col-two"><h6>I've started by writing a script that would be enough to present the issue. <br><br> The full script can be found on the right and the sections in bold are what I chose to illustrate on the video. These sections also relate with the storyboard below. </h6></div>
+
+<div class="col-two box"><p4><b>‘I have a broken leg’</b><br>
+A sentence greeted with understanding, offers of help, and ‘Get Well Soon’-cards. So why aren’t mental illnesses greeted with the same sympathy? <br><br>
+Unlike physical illnesses, mental illnesses are usually not visible to outsiders. This leads many people to believe that someone is <b>just faking their illness or is exaggerating. </b><br>
+This <b>trivialisation leads</b> in turn <b>to stigmatisation of mentally ill people. </b> With mental illnesses not being taken seriously, more people are <b>reluctant to get professional help</b> out of fear of not being accepted within their society. <br>
+While mental illnesses can theoretically affect anyone, as with every illness there are certain <b>factors that can increase the risk</b>. These include social exclusion, constant pressure to perform and economic instability.
+<br><br>
+However, emotional wellbeing and mental health are often still a ‘luxury problem’ of middle classes, with lower social classes giving more importance to functionality and physical health. This calls for <b>varying and individual approaches</b> of tackling the issue of mental illnesses within different social groups.<br><br>
+Looking at the high number of suicides all over Europe, the pressure to find solutions to the issue of mental health is on.<br>
+How can the we <b>provide easier access to professional help</b> for mentally ill people, and tackle the stigmatisation around it</b>, so that they can be treated equally?<p4></div>
+
+<div class="col-four"><img src="images/storyboard.jpg"></div>
+<br><br>
+<div class="col-six morph"><a href="item-one-eval.html"><h2><p1>Self-evaluation for <b>Motion Graphics</b></p1></h2></div>
+</body>
